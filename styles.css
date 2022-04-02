@@ -8,19 +8,23 @@
 	--secondary-brand-bg: #FFBB29;
 	--main-title-color: #363635;
 	--main-role-color: #292F36;
+	--size: 96px;
+  --radius: calc(var(--size) * 20 / 100);
 }
 
 
 .avatar {
-    background-image: url(https://images-ext-2.discordapp.net/external/bFJMJl00xhHDOnu1VHcrW7M5RPJQ_dXZRET9enkKc_w/https/cdn.discordapp.com/avatars/228567257918341120/27d12ae2fee9d184beea4a587d001428);    
-    background-size: cover;
-	height:96px;
-	width:96px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
+  background-image: url(assets/me.jpg);    
+  background-size: 116px;
+  background-position: center;
+	height:var(--size);
+	width:var(--size);
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
 	margin-right: 16px;
-	z-index: 100;
+	z-index: 20;
+	position: relative;
 }
 
 
@@ -138,6 +142,13 @@ body, html {
   letter-spacing: 5px;
   z-index: 100;
 }
+
+
+
+
+
+
+
 
 @keyframes mainBlock {
   0% {
